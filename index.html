@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suren Mohammed — Computational Social Scientist</title>
+  <meta name="description" content="Suren Mohammed — computational social scientist studying conflict, power-sharing, spatial analysis, and secession." />
+  <meta property="og:title" content="Suren Mohammed" />
+  <meta property="og:description" content="Computational social scientist focused on conflict, power-sharing, and spatial analysis." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">Suren Mohammed</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#data">Data & Code</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Computational Social Scientist</h1>
+        <p class="lead">
+          I study how <strong>power-sharing</strong> and <strong>ethnic parity</strong> shape the spatial distribution of violence.
+          My work blends <strong>statistical learning</strong>, <strong>GIS</strong>, and <strong>conflict data</strong> to explain
+          and predict local political dynamics.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#research">Explore Research</a>
+          <a class="btn" href="cv/Suren_Mohammed_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="stat">
+          <span class="stat-num" data-count="3">3</span>
+          <span class="stat-label">Core Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="6">6</span>
+          <span class="stat-label">Datasets</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="12">12</span>
+          <span class="stat-label">Workshops</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I'm a Ph.D. candidate in Political Science at the University of Florida.
+          My dissertation, <em>Parity & Violence</em>, explains why communal violence clusters locally by
+          focusing on districts approaching population <strong>parity</strong> between rival groups.
+        </p>
+        <p>
+          Methodologically, I build district-level datasets, develop parity indices, and fit models ranging from
+          negative binomial GLMs to Bayesian spatial counts. I also create open-source teaching materials in
+          Python and R for spatial and computational social science.
+        </p>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Research</h2>
+          <p class="muted">Selected projects in conflict, secession, and spatial analysis.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Parity &amp; Violence</h3>
+            <p>Subnational dynamics of communal conflict in Iraq (2003–2009), modeling how approaching
+            ethnic parity interacts with political shocks to catalyze mobilization.</p>
+            <ul class="meta">
+              <li>Methods: spatial GLMs, random effects, robust clustering</li>
+              <li>Tools: R (glmmTMB), ArcGIS Pro, tmap</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>DDR Sequencing</h3>
+            <p>Markov chain models of Disarmament, Demobilization, and Reintegration using DDR-40 (1980–2020) to
+            estimate transition probabilities and conflict recurrence risk.</p>
+            <ul class="meta">
+              <li>Methods: Markov chains, survival analysis</li>
+              <li>Tools: R/Python, tidyverse, lifelines</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Self-Determination Movements</h3>
+            <p>Multi-country dataset linking referendum outcomes, leadership attributes, and escalation from nonviolent
+            claims to armed conflict; early-warning through ML classifiers.</p>
+            <ul class="meta">
+              <li>Methods: Random Forests, logistic regression</li>
+              <li>Tools: sklearn, caret, modelsummary</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <div class="container">
+        <h2>Publications &amp; Working Papers</h2>
+        <ol class="pubs">
+          <li><strong>Local Parity and the Geography of Violence</strong> (working paper).</li>
+          <li><strong>Sequencing DDR: Transition Paths and Recurrence</strong> (in preparation).</li>
+          <li><strong>Leadership and Secession Under Uncertainty</strong> (working paper).</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="section alt">
+      <div class="container">
+        <h2>Teaching</h2>
+        <div class="grid two">
+          <div>
+            <h3>Courses & Workshops</h3>
+            <ul>
+              <li>Spatial Analysis for Conflict Studies (R/ArcGIS)</li>
+              <li>Machine Learning for Political Science (Python/R)</li>
+              <li>Reproducible Research with Quarto</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Materials</h3>
+            <p>Open-source labs and templates for data wrangling, model fitting, and mapping.</p>
+            <p><a class="btn small" href="#data">See Data & Code</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data & Code -->
+    <section id="data" class="section">
+      <div class="container">
+        <h2>Data &amp; Code</h2>
+        <p class="muted">Links to GitHub repos and datasets (replace with your own).</p>
+        <ul class="list">
+          <li><strong>Iraq District Violence</strong> — district-level incidents and parity indices.</li>
+          <li><strong>DDR-40 Derived</strong> — curated transitions for modeling.</li>
+          <li><strong>SDM Referenda</strong> — comparative escalation and referendum dataset.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@surenmohammed.com">hello@surenmohammed.com</a></p>
+        <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com</a></p>
+        <form class="contact" action="mailto:hello@surenmohammed.com" method="post" enctype="text/plain">
+          <div class="row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Hello Suren…" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+        <p class="micro muted">This simple form uses your mail client. For a hosted form later, add Netlify Forms or Google Forms.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Suren Mohammed · Built with lightweight HTML/CSS/JS.</small>
+      <a class="top" href="#home" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
